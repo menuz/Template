@@ -7,4 +7,47 @@ Project->Build Path->Libraries->junit-4.11.jar->Source attachment
 设置路径：
 Project->Build Path->Libraries->junit-4.11.jar->Javadoc location
 
+2) 代码自动补充
+Preferecences->Java->Editor->Content Assist
+Auto Activiation
 
+
+3) 快捷键 VS VIM
+   快速查找资源  				Ctrl+SHIFT+R  
+   快速查找类，接口 				Ctrl+SHIFT+T	 
+   快速定位当前文件函数，变量		Ctrl+O        	
+   模糊查找，十分good          Ctrl+H		 	
+   
+   例如你想知道Class.getConn()在哪里被使用了。
+   打开调用层次结构：			Ctrl+Alt+H 
+   
+   例如你系那个知道ExampleDAO的父类
+   快速层次结构：				Ctrl+T 
+   
+   显示快捷键帮助：				Ctrl+Shift+L 
+   在当前行上插入一行：			Ctrl+Shift+Enter 
+   在当前行下插入一行： 			Shift+Enter 
+   上下移动选中的行：			Alt+Up/Down 
+   
+    定位/选中/操作同时 
+		选中闭合元素：Alt+Shift+Up 
+		选中{}内所有内容
+		选中到行末/行首：Shift+End/Home 
+		选中上一个/下一个单词：Ctrl+Shift+Left/Right 
+		
+		
+		删除行：Ctrl+D 
+		删除下一个/上一个单词：Ctrl+Delete/Backspace 
+		删除到行末：Ctrl+Shift+Delete 
+		在当前行上插入一行：Ctrl+Shift+Enter 
+		在当前行下插入一行： Shift+Enter 
+		
+		上下移动选中的行：Alt+Up/Down 
+		拷贝选中的行：Ctrl+Alt+Up/Down 
+   
+   编辑器、视图、透视图切换 
+		 下一个编辑器：Ctrl+F6 
+		 下一个视图：Ctrl+F7 
+		 下一个透视图：Ctrl+F8 
+	               最大化当前视图或编辑器：Ctrl+M 
+		 激活编辑器：F12 
