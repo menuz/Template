@@ -12,8 +12,17 @@ public class GeoDistance {
 	{
 	   return d * Math.PI / 180.0;
 	}
-	/*
-	 * 函数返回两个经纬度坐标之间的距离，返回的单位是米
+	
+	/**
+	 * 
+		 * 此方法描述的是：计算两个GPS之间的实际物理距离
+	     * @param lat1
+	     * @param lng1
+	     * @param lat2
+	     * @param lng2
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:33:06
 	 */
 	public static double computeCompareDistance(double lat1, double lng1, double lat2, double lng2)
 	{

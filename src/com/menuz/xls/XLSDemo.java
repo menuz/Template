@@ -9,6 +9,12 @@ import jxl.write.Label;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 
+/**
+ * 
+ * 此类描述的是：XLS操作例子
+ * @author: dmnrei@gmail.com
+ * @version: 2013-3-31 下午6:39:31
+ */
 public class XLSDemo {
 	public void input() {
 		

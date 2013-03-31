@@ -19,32 +19,71 @@ public class DateUtil {
 	
 	/**
 	 * 
-		 * 此方法描述的是：
-		 * @author: dmnrei@gmail.com
-		 * @version: Mar 31, 2013 10:29:40 AM
+		 * 此方法描述的是：得到当前时间的datetime
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:33:36
 	 */
 	public static String getDatetime() {
 		return  df_datetime.format(new Date());
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：以特定形式展示当前datetime
+	     * @param pattern
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:34:48
+	 */
 	public static String getDatetimeWithPattern(String pattern) {
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		return sdf.format(new Date());
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：得到当前日期
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:35:32
+	 */
 	public static String getDate() {
 		return df_date.format(new Date());
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：以特定形式返回当前日期
+	     * @param pattern
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:35:44
+	 */
 	public static String getDateWithPattern(String pattern) {
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		return sdf.format(new Date());
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：得到当前时间
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:36:03
+	 */
 	public static String getTime() {
 		return df_date.format(new Date());
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：以特定形式返回当前时间
+	     * @param pattern
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:36:21
+	 */
 	public static String getTimeWithPattern(String pattern) {
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		return sdf.format(new Date());
@@ -52,9 +91,12 @@ public class DateUtil {
 	
 	/**
 	 * 
-		 * 此方法描述的是：得到前一天的日期
-		 * @author: dmnrei@gmail.com
-		 * @version: Dec 5, 2012 12:53:17 PM
+		 * 此方法描述的是：以特定形式返回前后几天的时间
+	     * @param pattern
+	     * @param day   +1  表示明天 -1 表示昨天
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:36:51
 	 */
 	public static String getDateWithDayInterval(String pattern, int day) {
 		Calendar c =  Calendar.getInstance();
@@ -89,19 +131,40 @@ public class DateUtil {
 		return cal.get(Calendar.SECOND);
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：timestamp convert to string
+	     * @param t
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:38:20
+	 */
 	public static String timestampToString(Timestamp t) {
 		return df_datetime.format(t);
 	}
 	
+	/**
+	 * 
+		 * 此方法描述的是：string convert to timestamp
+	     * @param str
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:38:35
+	 */
 	public static Timestamp stringToTimestamp(String str) {
 		return Timestamp.valueOf(str);
 	}
 	
+
 	/**
 	 * 
-		 * 此方法描述的是：高度定制,seconds默认为0,往前推或者往后推迟。
-		 * @author: dmnrei@gmail.com
-		 * @version: Mar 31, 2013 10:52:20 AM
+		 * 此方法描述的是：将timestamp转换为特定形式的时间
+	     * @param t
+	     * @param seconds
+	     * @param pattern
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:38:52
 	 */
 	public static String timestampToString(Timestamp t, int seconds, String pattern) {
 		SimpleDateFormat df = new SimpleDateFormat(pattern);

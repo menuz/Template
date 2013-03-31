@@ -9,15 +9,28 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 
+ * 此类描述的是：操作数据库实现类，包含插入，查询等方式
+ * @author: dmnrei@gmail.com
+ * @version: 2013-3-31 下午6:30:44
+ */
 public class ExampleDAO extends JdbcDAO {
+	
 	/**
- 	 * 
- 		 * 此方法描述的是： 往bus_instant_info添加一条即时记录
- 		 * @param 
- 	     * @return void 
- 		 * @version: Oct 17, 2012 6:59:53 PM
- 		 * @author: dmnrei@gmail.com
- 	 */
+	 * 
+		 * 此方法描述的是：Insert
+	     * @param lat
+	     * @param lon
+	     * @param bus_id
+	     * @param route_id
+	     * @param direction_id
+	     * @param sf
+	     * @param st
+	     * @param time
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:31:52
+	 */
 	public void insertInstantData(double lat, double lon, int bus_id, int route_id,
 			int direction_id, int sf, int st, double time)
 	{
@@ -52,12 +65,13 @@ public class ExampleDAO extends JdbcDAO {
 	
 	
 	 
-    /**
-     * 
-    	 * 此方法描述的是：抓取route表到内存
-    	 * @author: dmnrei@gmail.com
-    	 * @version: Nov 12, 2012 6:40:10 PM
-     */
+	/**
+	 * 
+		 * 此方法描述的是：Query
+	     * @return
+	     * @author: dmnrei@gmail.com
+	     * @version: 2013-3-31 下午6:31:40
+	 */
     public Map<Integer, String> queryAllString() {
     	Map<Integer,String> routeMap = new HashMap<Integer, String>();
         String sql = "select * from route";
