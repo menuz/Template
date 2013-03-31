@@ -2,11 +2,3 @@ This project is extracted from my first project restbus.
 Some code is reuseable, And I will keep maintaining.
 
 
-How to make use of Eclipse:
-0) 如何查看Junit4源文件 快捷键F3 如junit-src.jar 
-设置路径：
-Project->Build Path->Libraries->junit-4.11.jar->Source attachment
-
-1) 查看String类的API，快捷键SHITF+F2, 一般需要下载apidoc.jar，可以在线和离线进行定位，离线当然最好了。
-设置路径：
-Project->Build Path->Libraries->junit-4.11.jar->Javadoc location
