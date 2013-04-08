@@ -51,3 +51,8 @@ Auto Activiation
 		 下一个透视图：			Ctrl+F8 
 	               最大化当前视图或编辑器： Ctrl+M 
 		 激活编辑器：			F12 
+
+4) linux eclipse UI configuration file gtkrc
+   cp gtkrc2.0  ~/
+   cd ~
+   mv gtkrc2.0 .gtkrc2.0
