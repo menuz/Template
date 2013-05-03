@@ -6,7 +6,7 @@ import org.dom4j.Element;
 
 /**
  * 
- * 此类描述的是： 用于生成http://localhost:8080/restbus/publicXMLFeed?command=routeConfig&a=1&r=101
+ * 此类描述的是： 用于生成publicXMLFeed?command=routeConfig&a=1&r=101
  * @author: dmnrei@gmail.com
  * @version: Oct 22, 2012 9:33:29 PM
  */
@@ -47,7 +47,7 @@ public class XMLCreator {
 	
 	/**
 	 * 
-		 * 此方法描述的是：xml在web程序中有用，response.setContentType("text/xml");
+		 * 此方法描述的是：xml在web程序中使用，需要注明reponse.setContentType("text/xml");
 		 * @author: dmnrei@gmail.com
 		 * @version: Mar 31, 2013 3:47:58 PM
 	 */
@@ -59,7 +59,7 @@ public class XMLCreator {
 		creator.addDirection("1", "朝晖->本部");
 		creator.addStop("1");
 		creator.addStop("2");
-		String xml = creator.toDocument().toString();
+		String xml = creator.toDocument().asXML();
 		System.out.println(xml);
 	}
 }
